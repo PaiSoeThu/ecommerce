@@ -1,0 +1,9 @@
+@import './node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import './node_modules/animate.css/animate.min.css';
+
+
+.item-img{
+    height: 150px;
+    max-width: 100%;
+    object-fit: contain;
+}
