@@ -10,17 +10,39 @@
     <header class="container sticky-top d-flex justify-content-between align-items-center border-primary p-3 shadow-sm mb-3 bg-light">
       <h4>My Shop
       </h4>
-      <button type="button" class="btn btn-primary position-relative animate__animated allCart">
+      <button type="button" class="btn btn-primary position-relative animate__animated allCart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
         cart
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cartAmount">
           0
           <span class="visually-hidden">unread messages</span>
         </span>
       </button>
     </header>
+
    
     <div class="container">  
       <div class="row items-row">
+      </div>
+    </div>
+
+
+    
+    <!-- offcanvas  -->
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart ----- <span class="cartAmount">0</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        
+      </div>
+      <div class="offcanvas-footer">
+        <div class="d-flex justify-content-around  align-items-center">
+          <p>Total</p>
+          <p class="totalAmount"></p>
+        </div>
+        <button class="btn btn-primary w-100">Check Out</button>
       </div>
     </div>
     <script type="module" src="/main.js"></script>
